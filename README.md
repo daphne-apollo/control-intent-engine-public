@@ -1,28 +1,60 @@
-# control-intent-engine-public
-This repository contains public documentation and conceptual material for the Control Intent Engine. The implementation is currently private.
-
 # Control Intent Engine
 
-**Executable Governance Reasoning for Security, Privacy, and AI**
+**Executable governance reasoning for modern systems**
 
-The Control Intent Engine is a governance reasoning engine that evaluates **system reality** against **human-defined governance intents**, and deterministically resolves those intents into framework-specific expectations (ISO 27001, NIST, SOC 2, for example).
+---
 
-It is not a checklist generator.
-It is not a policy authoring tool.
+> **Project status:** Active research and demonstration project
+
+---
+
+This repository contains public documentation describing the architecture and governance model behind the **Control Intent Engine**. The implementation is currently private while the engine and intent library continue to evolve.
+
+The Control Intent Engine evaluates **system reality** against **human-defined governance intents**, and deterministically resolves those intents into framework expectations (ISO 27001, NIST SP 800-53, SOC 2, and others).
+
+It is not a checklist generator.  
+It is not a policy authoring tool.  
 
 It is a way to make governance logic **explicit, explainable, and reproducible**.
 
 ---
 
-## Why this exists
+## Governance model
 
 Most governance and GRC tooling starts from frameworks and works backward:
 
-> controls → checklists → evidence → audits
-
-This forces teams to reason in compliance language first, even though real governance decisions are made in terms of **architecture, data flows, access patterns, and automation**.
+```
+controls → checklists → evidence → audits
+```
 
 The Control Intent Engine inverts that model:
+
+```
+system characteristics → governance intent → framework controls appear
+```
+
+---
+
+## A different governance foundation
+
+The Control Intent Engine explores a different foundation for security governance.
+
+Most governance systems treat frameworks as the starting point.  
+Controls are selected from catalogs, then interpreted in the context of a system.
+
+This project explores the inverse model.
+
+Instead of beginning with frameworks, governance begins with **system reality**:  
+architecture, behavior, data flows, automation, and operational context.
+
+From those characteristics, governance intents activate.  
+Framework controls appear only as **representations of that reasoning**.
+
+In this model, frameworks become **views of governance**, not the source of it.
+
+The engine simply makes this reasoning **explicit and executable**.
+
+---
 
 > **system characteristics → governance intent → framework controls appear**
 
@@ -143,6 +175,18 @@ It is a **governance reasoning engine**.
 
 ---
 
+## Research context
+
+The Control Intent Engine represents an ongoing research effort exploring **executable governance reasoning** for complex software and AI-enabled systems.
+
+The governance intents and architectural model reflected in this project were developed through extended study of practitioner guidance, security research, conference presentations, and real-world governance discussions with engineers, architects, and security leaders.
+
+These sources were curated and synthesized into a structured governance model that can be expressed deterministically in software.
+
+The goal of the project is not to replace existing security frameworks, but to explore how governance reasoning can be made **explicit, reproducible, and architecture-aware** before frameworks are applied.
+
+---
+
 ## Repository status
 
 This repository contains **public documentation** describing the Control Intent Engine’s governance model and intended use.
@@ -164,6 +208,18 @@ The implementation is currently private while the intent library and engine cont
 * Governance and compliance practitioners
 * AI governance working groups
 * Architects who want governance grounded in system reality
+
+---
+
+## Citation concept
+
+The Control Intent Engine explores a governance model in which **framework controls are treated as projections of underlying governance reasoning rather than the source of governance itself**.
+
+---
+
+## Feedback
+
+Thoughtful feedback from practitioners and researchers is welcome.
 
 ---
 
